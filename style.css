@@ -1,0 +1,21 @@
+.headerimg{
+  width:100px;
+  height:auto;
+  
+}
+
+.headerimg2{
+  width:auto;
+  height:50px;
+  
+}
+
+.spacing{
+  justify-content: space-around;
+}
+
+.spacing{
+  justify-content: flex-end;
+}
+
+div[class^='col']{border: 1px solid black;}
