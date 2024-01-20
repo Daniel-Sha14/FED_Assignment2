@@ -4,6 +4,7 @@
   
 }
 
+
 .headerimg2{
   width:auto;
   height:25px;
@@ -45,11 +46,15 @@
 
 .font {
   font-family: 'Montserrat', sans-serif;
-  color: black;
+  color: darkblue;
   font-size: 40px;
 }
 
-
+.font2 {
+  font-family: 'Montserrat', sans-serif;
+  color: darkblue;
+  font-size: 20px;
+}
 
 
 .flex-info img {
@@ -60,15 +65,8 @@
   
 }
 
-.font {
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  font-size: 40px;
-}
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 .footer {
   border:10px;
@@ -107,11 +105,13 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 50px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-item {
   font-weight: bold;
   margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -119,19 +119,6 @@ body {
   justify-content: space-between;
 }
 
-h1{
-  font-size: 54px;
-  text-transform: uppercase;
-  text-align: center;
-  color: black;
-  font-family: 'Odibee Sans', cursive;
-  margin-bottom: 0;
-}
-
-#css {
-  color: yellow;
-  font-family: 'Odibee Sans', cursive;
-}
 
 .carousel-wrapper {
   height: 400px;
@@ -161,56 +148,19 @@ h1{
   object-fit: contain;
 }
 
-
-.arrow{
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 12px;
-}
-.arrow-prev {
-  left: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(135deg);
-
-}
-.arrow-next {
-  right: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+/*#carouselExampleFade2 .carousel-control-prev-icon,
+#carouselExampleFade2 .carousel-control-next-icon {
+  background-color: black; 
 }
 
-[id^= "item"] {
-  display: none;
-}
-.item-1 {
-  z-index: 2;
-  opacity: 1;
-  background: url('home1.jpeg');
-  background-size: contain;
-}
-.item-2 {
-  background: url('header.png');
-  background-size: contain;
-}
-.item-3 {
-  background: url('header2.png');
-  background-size: contain;
+#carouselExampleFade2 .carousel-control-prev,
+#carouselExampleFade2 .carousel-control-next {
+  color: black; 
 }
 
-*:target ~ .item-1{
-  opacity: 0;
-}
-#item-1:target ~ .item-1 {
-  opacity: 1;
-
-}
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-  z-index: 3;
-  opacity: 1;
-} 
-
+#carouselExampleFade2 .carousel-control-prev:hover,
+#carouselExampleFade2 .carousel-control-next:hover {
+  color: white; 
+}*/
 
 div[class^='col']{border: 1px solid darkblue;}
