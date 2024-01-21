@@ -81,6 +81,15 @@
   
 }
 
+.split2 {
+  display: flex;
+  flex-direction: column;
+  align-content:flex-end;
+  margin:100px;
+  
+}
+
+
 .imagespace {
   width: 500px;
   height: 350px;
@@ -147,6 +156,41 @@
   height: 100%;
   object-fit: contain;
 }
+
+.container2 {
+  display: flex;
+	flex-wrap:wrap;
+ 
+
+}
+
+.flex-info {
+  
+  text-align:center
+}
+
+.imageside2 {
+  box-sizing: border-box;
+  padding: 2%;
+  margin: 10px;
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 15%;
+  display: flex;
+flex-direction: column;
+  align-items:center;
+  
+}
+
+.flex-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  
+  
+}
+
+
 
 /*#carouselExampleFade2 .carousel-control-prev-icon,
 #carouselExampleFade2 .carousel-control-next-icon {
