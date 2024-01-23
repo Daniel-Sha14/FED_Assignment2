@@ -306,6 +306,18 @@ flex-direction: column;
   border-color:darkblue;
 }
 
+.centertext {
+  display: block;
+  text-align: center;
+}
+
+.backtologin{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 
 
 /*#carouselExampleFade2 .carousel-control-prev-icon,
