@@ -36,11 +36,12 @@
 .productDesc{
     text-align:center;
     padding: 20px 0px;
+    color:darkblue;
     
 }
 
 .productDesc button{
-  background-color: #353432;
+  background-color: darkblue;
   color:white;
   padding: 10px 15px;
   border-radius: 10px;
