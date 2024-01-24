@@ -20,7 +20,7 @@
     padding: 120px;
     
   }*/
-  .container2{
+  .container3{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     gap:50px;
