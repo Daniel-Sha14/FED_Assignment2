@@ -9,5 +9,5 @@
 ### Features
 
 #### Existing Features
-###### * Dropdown Navigation Bar, makes its easier for customers to navigate to various pages
+* Dropdown Navigation Bar, makes its easier for customers to navigate to various pages
 
