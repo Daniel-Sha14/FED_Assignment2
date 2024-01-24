@@ -29,10 +29,8 @@
 ### Credits
 #### Pictures used for the website
 
- a few other online retail shops
-
 ### Codes
 * Some codes were taken from Bootstrap, W3school
 
 #### Acknowledgements
-* Some parts of this website is inspired by Uniqlo and
+* Some parts of this website is inspired by Uniqlo and a few other online retail shops 
