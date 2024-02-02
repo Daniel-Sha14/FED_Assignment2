@@ -89,4 +89,26 @@ function searchItems() {
   }
 }
 
-  
+// Sample product data (you can fetch this from a server or a database)
+const products = [
+  { id: 1, name: 'Tank Top', description: 'Comfortable tank top for everyday wear.' },
+  { id: 2, name: 'Jeans', description: 'Classic denim jeans for any occasion.' },
+  // Add more products as needed
+];
+
+// Function to display product details
+function showProductDetails(productId) {
+  const product = products.find(item => item.id === productId);
+
+  if (product) {
+      // Update the content of the page with product details
+      document.getElementById('product-name').innerText = product.name;
+      document.getElementById('product-description').innerText = product.description;
+      // Update other details as needed
+
+      // You can also navigate to a different section of the page if needed
+      window.location.href = '#product-details';
+  } else {
+      alert('Product not found');
+  }
+}
