@@ -89,26 +89,39 @@ function searchItems() {
   }
 }
 
-// Sample product data (you can fetch this from a server or a database)
-const products = [
-  { id: 1, name: 'Tank Top', description: 'Comfortable tank top for everyday wear.' },
-  { id: 2, name: 'Jeans', description: 'Classic denim jeans for any occasion.' },
-  // Add more products as needed
-];
 
-// Function to display product details
-function showProductDetails(productId) {
-  const product = products.find(item => item.id === productId);
 
-  if (product) {
-      // Update the content of the page with product details
-      document.getElementById('product-name').innerText = product.name;
-      document.getElementById('product-description').innerText = product.description;
-      // Update other details as needed
+// Check if points are stored in local storage, if not, initialize to 0
+let userPoints = parseInt(localStorage.getItem('userPoints')) || 0;
 
-      // You can also navigate to a different section of the page if needed
-      window.location.href = '#product-details';
-  } else {
-      alert('Product not found');
-  }
+// Update the points display on the website
+function updatePointsDisplay() {
+  document.getElementById('pointsDisplay').innerText = `Points: ${userPoints}`;
 }
+
+// Function to add an item to the cart
+function addToCart(itemId, price) {
+  // Perform the logic to add the item to the cart
+  // ...
+
+  // Update points based on the item price
+  userPoints += Math.floor(price / 1); // Assuming 1 dollar = 5 points
+
+  // Save the updated points to local storage
+  localStorage.setItem('userPoints', userPoints);
+
+  // Update the points display
+  updatePointsDisplay();
+
+  // Show a message to the user
+  alert(`Item added to cart. You now have ${userPoints} points.`);
+}
+
+// Function to be called when the page loads
+function onPageLoad() {
+  // Update the points display on page load
+  updatePointsDisplay();
+}
+
+// Call onPageLoad when the page loads
+document.addEventListener('DOMContentLoaded', onPageLoad);

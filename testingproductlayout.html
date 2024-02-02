@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+</head>
+<body>
+
+  <div id="productDetails">
+    <h1 id="productName">Product Name</h1>
+    <img id="productImage" src="placeholder.jpg" alt="Product Image">
+    <p id="productDescription">Product Description goes here.</p>
+    <p id="productPrice">$0.00</p>
+  </div>
+
+  <div>
+    <h2>Product Selection</h2>
+    <button onclick="showProduct('Shirt')">Show Shirt</button>
+    <button onclick="showProduct('Pants')">Show Pants</button>
+    <!-- Add more buttons for other products -->
+  </div>
+
+  <script>
+    function showProduct(productType) {
+      // Simulate fetching product details from a database or server
+      const productDetails = getProductDetails(productType);
+
+      // Update the content of the page with the fetched details
+      document.getElementById('productName').innerText = productDetails.name;
+      document.getElementById('productImage').src = productDetails.image;
+      document.getElementById('productDescription').innerText = productDetails.description;
+      document.getElementById('productPrice').innerText = `$${productDetails.price.toFixed(2)}`;
+    }
+
+    function getProductDetails(productType) {
+      // Replace this with actual data retrieval logic
+      // You might fetch data from a server or use a predefined set of data
+      const productData = {
+        'Shirt': { name: 'Cool Shirt', image: 'shirt.jpg', description: 'Comfortable shirt for any occasion.', price: 25.99 },
+        'Pants': { name: 'Casual Pants', image: 'pants.jpg', description: 'Stylish pants for a trendy look.', price: 39.99 }
+        // Add more product types with their details
+      };
+
+      return productData[productType] || { name: 'Unknown', image: 'placeholder.jpg', description: 'No description available.', price: 0.00 };
+    }
+  </script>
+
+</body>
+</html>
