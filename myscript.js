@@ -135,3 +135,78 @@ function selectSize(size) {
   // Update the selected size display
   document.getElementById('selected-size').innerText = size;
 }
+
+function updateProductDetails(item) {
+  document.getElementById("productImage").src = item.image;
+  document.getElementById("productName").innerText = item.name;
+  document.getElementById("productPrice").innerText = "Price: $" + item.price;
+  document.getElementById("productDescription").innerText = item.description;
+
+  // Update color boxes
+  var colorBoxes = document.getElementById("color-boxes");
+  colorBoxes.innerHTML = "";
+  item.colors.forEach(function(color) {
+      var box = document.createElement("div");
+      box.className = "color-box";
+      box.style.backgroundColor = color;
+      box.setAttribute("onclick", "selectColor('" + color + "')");
+      colorBoxes.appendChild(box);
+  });
+
+  // Update size selection boxes
+  var selectionBoxes = document.getElementById("selection-boxes");
+  selectionBoxes.innerHTML = "";
+  item.sizes.forEach(function(size) {
+      var box = document.createElement("div");
+      box.className = "selection-box";
+      box.setAttribute("onclick", "selectSize('" + size + "')");
+      box.innerText = size;
+      selectionBoxes.appendChild(box);
+  });
+}
+
+var sampleItem = {
+  image: "images/header2.png",
+  name: "Sample Product",
+  price: "$19.99",
+  description: "This is a sample product description."
+  // Add other properties as needed
+};
+
+// Function to update item details
+function updateItemDetails(item) {
+  document.getElementById("item-image").src = item.image;
+  document.getElementById("item-name").textContent = item.name;
+  document.getElementById("item-price").textContent = item.price;
+  document.getElementById("item-description").textContent = item.description;
+  // Add code to update other details dynamically
+}
+
+// Initial update with the sample item
+updateItemDetails(sampleItem);
+
+function showItemDetails(name, price, image, description) {
+  // Store item details in localStorage (you can use other methods like cookies, session storage, etc.)
+  localStorage.setItem('itemName', name);
+  localStorage.setItem('itemPrice', price);
+  localStorage.setItem('itemImage', image);
+  localStorage.setItem('itemDescription', description);
+
+  // Redirect to the item description page
+  window.location.href = 'itemdescription.html';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Retrieve item details from localStorage
+  var itemName = localStorage.getItem('itemName');
+  var itemPrice = localStorage.getItem('itemPrice');
+  var itemImage = localStorage.getItem('itemImage');
+  var itemDescription = localStorage.getItem('itemDescription');
+
+  // Update the content dynamically
+  document.getElementById('item-name').textContent = itemName;
+  document.getElementById('item-price').textContent = itemPrice;
+  document.getElementById('item-image').src = itemImage;
+  document.getElementById('item-description').textContent = itemDescription;
+  // Add other dynamic updates as needed
+});
