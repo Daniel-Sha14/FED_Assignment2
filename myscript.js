@@ -125,3 +125,13 @@ function onPageLoad() {
 
 // Call onPageLoad when the page loads
 document.addEventListener('DOMContentLoaded', onPageLoad);
+
+function selectColor(color) {
+  // Update the selected color display
+  document.getElementById('selected-color').innerText = color;
+}
+
+function selectSize(size) {
+  // Update the selected size display
+  document.getElementById('selected-size').innerText = size;
+}
