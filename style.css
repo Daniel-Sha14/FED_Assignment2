@@ -453,15 +453,28 @@ flex-direction: column;
 .button-container {
   display: flex;
   flex-direction: column;
-  margin-top:20px;
-  width: 100%; /* Make the buttons take the full width */
+  margin-top: 20px;
+  width: 100%;
+  flex-grow: 1; /* Allow the container to grow */
+  
 }
 
 .wishlist-button,
 .cart-button {
-  width: 100%; /* Make the buttons take the full width */
+  width: 100%;
   max-width: 555px; /* Set a maximum width for the buttons */
-  margin-bottom: 10px; /* Add space between the buttons */
+  margin-bottom: 10px;
+  
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.product-container img {
+  height: 200px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
 }
 
 
