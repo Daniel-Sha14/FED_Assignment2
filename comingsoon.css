@@ -1,0 +1,58 @@
+/* For the products */
+.product{
+    box-shadow: 7px 7px 7px rgba(61, 84, 214, 0.1);
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    position:relative;
+  }
+  .container3{
+    display: grid;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-template-columns:repeat(3, 1fr);
+    gap:50px;
+    justify-content: center;
+  }
+.product img{
+    width: 250px;
+    height:auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin:auto;
+    filter: blur(4px);
+  
+}
+.productDesc{
+    text-align:center;
+    padding: 20px 0px;
+    color:darkblue;
+    
+    
+}
+
+.productDesc h4{
+    font-size: 24px;
+    padding:10px 0px;
+}
+
+
+
+/* For the countdown timer */
+.product p {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+    color:rgb(0, 0, 0);  
+    
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Oswald', sans-serif;
+  }
+
+  

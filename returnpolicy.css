@@ -1,8 +1,23 @@
-h1{
+.h1format{
     font-family: 'Teko', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
 }
 
-div{
-    
+.divformat {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
 }
+
+.format{
+    padding: 50px 30px 0px 30px;
+
+}
+
+.lottieformat {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+
