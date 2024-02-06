@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<header>
+    <title>
+        Danze
+    </title>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="style.css">
+  
+  <link href="index.sass" rel="sass"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	 crossorigin="anonymous">
+   <!--<link rel="stylesheet" href="css2.css">-->
+	
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+</header>
+<body class="box-sizing: border-box;">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="waccessoriesTestFormat.css" type="text/css">
+    <div myscript="header.html"></div>
+    <div class="container">
+        <div class="split" style="color:darkblue">
+            <img id="item-image" class="imagespace3" src="images/homemen.webp" alt="Product Image">
+            
+            
+            <div class="description">
+                <h2 id="item-name">Product Name</h2>
+                <p id="item-price">Price: $19.99</p>
+                <p>
+
+                </p>
+                <p id="item-description">This is a brief description of the product. You can add more details here.</p>
+                <hr>
+                <p>
+
+                </p>
+                <p>Color: <span id="selected-color">Select a color</span></p>
+                <div id="color-boxes">
+                    <!-- Color boxes -->
+                    <div class="color-box" style="background-color:darkslateblue;" onclick="selectColor('DarkSlateBlue')"></div>
+                    <div class="color-box" style="background-color: pink;" onclick="selectColor('Pink')"></div>
+                    <div class="color-box" style="background-color: violet;" onclick="selectColor('Violet')"></div>
+                    <div class="color-box" style="background-color:burlywood" onclick="selectColor('Burlywood')"></div>
+                    <div class="color-box" style="background-color: black;" onclick="selectColor('Black')"></div>
+                    <div class="color-box" style="background-color: orange;" onclick="selectColor('Orange')"></div>
+                    <div class="color-box" style="background-color: white;" onclick="selectColor('White')"></div>
+                    <div class="color-box" style="background-color: green;" onclick="selectColor('Green')"></div>
+                </div>
+                <div class="spacing"></div>
+                <p>Size Selected: <span id="selected-size">Select a size</span></p>
+                <div id="selection-boxes">
+                    
+                <div class="selection-box" onclick="selectSize('S')">S</div>
+                <div class="selection-box" onclick="selectSize('M')">M</div>
+                <div class="selection-box" onclick="selectSize('L')">L</div>
+                <div class="selection-box" onclick="selectSize('XL')">XL</div>
+                <div class="selection-box" onclick="selectSize('XXL')">XXL</div>
+
+                </div>
+                <div class="spacing"></div>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                
+                
+                <div class="button-container">
+                <button type="button" class="btn btn-primary btn-lg wishlist-button" style="color:white;background-color: darkblue;">Add to Wishlist</button>
+                <button type="button" class="btn btn-secondary btn-lg cart-button" style="color:white;background-color: darkblue;" onclick="addToShopCart()">Add to Cart</button>
+            </div>
+    
+
+            </div>
+            <div class="spacing"></div>
+            
+   
+            
+        </div>
+        
+        
+    </div>
+    
+    
+    
+  
+
+  </sector>
+  <div class="spacing"></div>
+  <section class="border" style="color: white">
+    <fieldset class="footer" class="font2">
+        <section class="container">
+            <div class="footer-split">
+                <a href="aboutus.html" style="color:white"><div class="footer-item">ABOUT US</div></a>
+            </div>
+            <div class="footer-split">
+                <div class="footer-item">HELP</div>
+                <a href="returnpolicy.html" style="color:white"><p>Return Policy</p></a>
+                <a href="bulkorder.html" style="color:white"><p>Bulk Order</p></a>
+            </div>
+            <div class="footer-split">
+                <div class="footer-item">ACCOUNT</div>
+                <a href="accountprofile.html" style="color:white"><p>Profile</p></a>
+                <a href="rewards.html" style="color:white"><p>Rewards</p></a>
+            </div>
+        </section>
+    </fieldset>
+  </section>
+
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="myscript.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+    
+  </body>
+  

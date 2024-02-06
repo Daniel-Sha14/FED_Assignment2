@@ -22,80 +22,70 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
 </header>
-<body>
+<body class="box-sizing: border-box;">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="waccessoriesTestFormat.css" type="text/css">
     <div myscript="header.html"></div>
-    <div class="font totheright">
-      <b>Sportswear (Women)</b>
-    </div>  
-      <div class="dropdown totheleft">
-        <a class="btn btn-secondary dropdown-toggle" href="wsnewlyadded.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Newly Added
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="wsportswear.html">Filters</a>
-          <a class="dropdown-item" href="wsfeatured.html">Featured</a>
-          <a class="dropdown-item" href="wspopular.html">Popular</a>
+    <div class="container">
+        <div class="split" style="color:darkblue">
+            <img id="item-image" class="imagespace3" src="images/homemen.webp" alt="Product Image">
+            
+            
+            <div class="description">
+                <h2 id="item-name">Product Name</h2>
+                <p id="item-price">Price: $19.99</p>
+                <p>
+
+                </p>
+                <p id="item-description">This is a brief description of the product. You can add more details here.</p>
+                <hr>
+                <p>
+
+                </p>
+                <p>Color: <span id="selected-color">Select a color</span></p>
+                <div id="color-boxes">
+                    <!-- Color boxes -->
+                    <div class="color-box" style="background-color: gray;" onclick="selectColor('Gray')"></div>
+                    <div class="color-box" style="background-color: darkblue;" onclick="selectColor('DarkBlue')"></div>
+                    <div class="color-box" style="background-color: blue;" onclick="selectColor('Blue')"></div>
+                    <div class="color-box" style="background-color: cadetblue" onclick="selectColor('CadetBlue')"></div>
+                    <div class="color-box" style="background-color: black;" onclick="selectColor('Black')"></div>
+                    <div class="color-box" style="background-color: beige;" onclick="selectColor('Beige')"></div>
+                    <div class="color-box" style="background-color: white;" onclick="selectColor('White')"></div>
+                </div>
+                
+                <div class="spacing"></div>
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                
+                
+                <div class="button-container">
+                <button type="button" class="btn btn-primary btn-lg wishlist-button" style="color:white;background-color: darkblue;">Add to Wishlist</button>
+                <button type="button" class="btn btn-secondary btn-lg cart-button" style="color:white;background-color: darkblue;" onclick="addToShopCart()">Add to Cart</button>
+            </div>
+    
+
+            </div>
+            <div class="spacing"></div>
+            
+   
+            
         </div>
-      </div>
-      
-
-    
-    <div class="">
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Women's Sportswear..">
-        <ul id="myUL">
-            
-            <li><a href="#sportstracksuit">Sports Tracksuit</a></li>
-            <li><a href="#shortsleevemoacktop">Short Sleeve Mock Top</a></li>
-            <li><a href="#yogaleggingsandsportsbra">Yoga Leggings and Sports Bra (Set)</a></li>
-          </ul>
-
-
-      </div>
-    <div class="spacing">
-
+        
+        
     </div>
-
-  <section class="container3">
-            
     
-    <div class="product" id="sportstracksuit">
-      
-        <a href= "itemdescription4.html" onclick="showItemDetails('Sports Tracksuit', '$50.00', 'images/wsportstracksuit.jpg', 'A sports tracksuit')"><img src="images/wsportstracksuit.jpg" alt=""></a>
+    
+    
   
-      <div class="productDesc" >
-          <h4>Sports Tracksuit</h4>
-          <h5>$50.00</h5>
-          <button>Add To Cart</button>
-      </div>
-  </div>
-  <div class="product" id="shortsleevemoacktop">
-      
-    <a href= "itemdescription4.html" onclick="showItemDetails('Short Sleeve Mock Top', '$45.00', 'images/shortsleevemocktop.png', 'A sports short sleeve top')"><img src="images/shortsleevemocktop.png" alt=""></a>
-      
-      <div class="productDesc" >
-          <h4>Short Sleeve Mock Top</h4>
-          <h5>$45.00</h5>
-          <button>Add To Cart</button>
-      </div>
-  </div>
-  <div class="product" id="yogaleggingsandsportsbra">
-      
-    <a href= "itemdescription4.html" onclick="showItemDetails('Yoga Leggings and Sports Bra (Set)', '$40.00', 'images/yogaleggingsandsportsbra.webp', 'Yoga leggings and sports bra set')"><img src="images/yogaleggingsandsportsbra.webp" alt=""></a>
-      
-      <div class="productDesc" >
-          <h4>Yoga Leggings and Sports Bra (Set)</h4>
-          <h5>$40.00</h5>
-          <button>Add To Cart</button>
-      </div>
-  </div>
-</section>
-<div class="spacing2"></div>
-    
 
-<section class="border" style="color: white">
+  </sector>
+  <div class="spacing"></div>
+  <section class="border" style="color: white">
     <fieldset class="footer" class="font2">
         <section class="container">
             <div class="footer-split">
@@ -116,15 +106,6 @@
   </section>
 
 
-      
-
-
-  </fieldset>
-  
-
-  </sector>
-
-
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -132,5 +113,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="myscript.js"></script>
     <script src="search.js"></script>
+    <script src="cart.js"></script>
     
   </body>
+  
