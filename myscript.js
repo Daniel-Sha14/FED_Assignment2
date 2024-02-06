@@ -1,3 +1,4 @@
+
 includeHTML();
 function includeHTML() {
   var z, i, a, file, xhttp;
@@ -91,40 +92,51 @@ function searchItems() {
 
 
 
-// Check if points are stored in local storage, if not, initialize to 0
-let userPoints = parseInt(localStorage.getItem('userPoints')) || 0;
+// // If the page is refreshed, reset userPoints to 0 and remove the flag
 
-// Update the points display on the website
-function updatePointsDisplay() {
-  document.getElementById('pointsDisplay').innerText = `Points: ${userPoints}`;
-}
 
-// Function to add an item to the cart
-function addToCart(itemId, price) {
-  // Perform the logic to add the item to the cart
-  // ...
+// // Check if points are stored in local storage, if not, initialize to 0
+// let userPoints = parseInt(localStorage.getItem('userPoints')) || 0;
 
-  // Update points based on the item price
-  userPoints += Math.floor(price / 1); // Assuming 1 dollar = 5 points
+// // Update the points display on the website
+// function updatePointsDisplay() {
+//   document.getElementById('pointsDisplay').innerText = `Points: ${userPoints}`;
+// }
 
-  // Save the updated points to local storage
-  localStorage.setItem('userPoints', userPoints);
+// // Function to add an item to the cart
+// function addToCart(itemId, price) {
+  
 
-  // Update the points display
-  updatePointsDisplay();
+//   // Update points based on the item price
+//   userPoints += Math.floor(price / 1); 
 
-  // Show a message to the user
-  alert(`Item added to cart. You now have ${userPoints} points.`);
-}
+//   // Save the updated points to local storage
+//   localStorage.setItem('userPoints', userPoints);
 
-// Function to be called when the page loads
-function onPageLoad() {
-  // Update the points display on page load
-  updatePointsDisplay();
-}
+//   // Update the points display
+//   updatePointsDisplay();
+  
+// }
 
-// Call onPageLoad when the page loads
-document.addEventListener('DOMContentLoaded', onPageLoad);
+// // Function to be called when the page loads
+// function onPageLoad() {
+//   // // Update the points display on page load
+//   // updatePointsDisplay();
+//   // Check if points are stored in local storage, if not, initialize to 0
+//   // userPoints = parseInt(localStorage.getItem('userPoints')) || 0;
+  
+
+//   // Update the points display on page load
+//   console.log("onPageLoad");
+//   userPoints = 0;
+//   updatePointsDisplay();
+  
+// }
+
+
+
+// // Call onPageLoad when the page loads
+// document.addEventListener('DOMContentLoaded', onPageLoad);
 
 function selectColor(color) {
   // Update the selected color display

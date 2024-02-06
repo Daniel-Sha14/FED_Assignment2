@@ -165,7 +165,7 @@ var cartContainer = document.getElementById('cart-items');
                         <select id="quantity" onchange="updateQuantity(this.value, '${item.name}')">
                         ${generateQuantityOptions(item.quantity)}
                         </select>
-                        <button class="removeBtn">REMOVE</button>
+                        <button class="removeBtn font2">REMOVE</button>
                     </div>
                 `;
                 cartContainer.appendChild(itemElement);
