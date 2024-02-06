@@ -1,0 +1,49 @@
+
+
+.titleFormat {
+    padding: 50px;
+
+}
+
+.cart-container {
+    width: 80%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 1px solid #ccc; /* Border around the container */
+    padding: 10px; /* Padding around the container */
+}
+
+
+
+#cart-items img{
+    max-width: 200px !important;
+    height: auto !important;
+} 
+
+.cart-item {
+    border: 2px solid #ccc; /* Add a border around each item */
+    padding: 10px; /* Add padding to create space between items */
+    margin-bottom: 10px; /* Add margin at the bottom to separate items */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+.cart-item img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    height: auto; /* Allow the image height to adjust according to its width */
+    margin-right: 10px; /* Add some margin to the right of the image */
+}
+
+.item-details {
+    flex: 1;/* Expand to fill available space */
+
+}
+
+.item-details h3 {
+    margin: 0; /* Remove default margin for heading */
+    margin-bottom: 5px; /* Add bottom margin for separation */
+}
+
+.removeBtn {
+    display: flex;
+    justify-content: flex-end;
+}
