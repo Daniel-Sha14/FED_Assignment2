@@ -90,7 +90,18 @@ function searchItems() {
   }
 }
 
+function addToCart(item, points) {
+  // ... (existing addToCart logic)
 
+  // Update points in localStorage
+  let currentPoints = localStorage.getItem('points') || 0;
+  localStorage.setItem('points', parseInt(currentPoints) + points);
+
+  // Update points display on rewards.html if it's open
+  if (window.location.href.includes("rewards.html")) {
+      updatePointsDisplay();
+  }
+}
 
 // // If the page is refreshed, reset userPoints to 0 and remove the flag
 
