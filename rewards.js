@@ -27,12 +27,6 @@
 // }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Check if the page was manually refreshed
-  if (performance.navigation.type === 1) {
-      // Page was refreshed manually, reset points
-      localStorage.setItem('points', 0);
-  }
-
   // Retrieve and display points when the page loads
   updatePointsDisplay();
 
@@ -47,16 +41,33 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function updatePointsDisplay() {
+  console.log('updatePointsDisplay called');
   // Retrieve points from local storage
-  let points = localStorage.getItem('points') || 0;
+  let points = calculateTotalPoints(JSON.parse(localStorage.getItem('cartItems')) || []);
+
   // Get the points display element
   let pointsDisplay = document.getElementById('pointsDisplay');
 
   if (pointsDisplay) {
       // Update the points display
       pointsDisplay.innerText = 'Points: ' + points;
-  } 
+  }
 }
+
+function calculateTotalPoints(cartItems) {
+  return cartItems.reduce(function (total, item) {
+      var itemPrice = parseFloat(item.price.replace('$', '')); // Assuming the price is formatted like '$XX.XX'
+      return total + item.quantity * 5 * itemPrice;
+  }, 0);
+}
+
+// Call updatePointsDisplay after updating the cart items on page load
+document.addEventListener('DOMContentLoaded', function () {
+  // Update points display on page load
+  updatePointsDisplay();
+});
+
+
 
 
 // Function to add an item to the cart
