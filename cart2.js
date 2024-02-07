@@ -2,9 +2,7 @@ function selectColor(color) {
     document.getElementById('selected-color').innerText = color;
 }
 
-function selectSize(size) {
-    document.getElementById('selected-size').innerText = size;
-}
+
 
 
 
@@ -98,7 +96,7 @@ function updateCartDisplay(cartItems) {
                 <div class="item-details">
                     <h3>${item.name}</h3>
                     <p>Price: ${item.price}</p>
-                    <p>Size: ${item.size}</p>
+                    
                     <p>Color: ${item.color}</p>
                     <label for="${item.name}-quantity">Quantity:</label>
                     <select id="${item.name}-quantity" onchange="updateQuantity(this.value, '${item.name}')">
@@ -145,7 +143,7 @@ function addToShopCart() {
     var productName = document.getElementById('item-name').innerText;
     var productPrice = document.getElementById('item-price').innerText;
     var selectedColor = document.getElementById('selected-color').innerText;
-    var selectedSize = document.getElementById('selected-size').innerText;
+    //var selectedSize = document.getElementById('selected-size').innerText;
     var quantity = document.getElementById('quantity').value;
 
     // Construct cart item object
@@ -154,7 +152,7 @@ function addToShopCart() {
         name: productName,
         price: productPrice,
         color: selectedColor,
-        size: selectedSize,
+        //size: selectedSize,
         quantity: quantity
     };
 
@@ -168,8 +166,7 @@ function addToShopCart() {
     var itemExists = cartItems.some(function(item) {
         return (
             item.name === cartItem.name &&
-            item.color === cartItem.color &&
-            item.size === cartItem.size
+            item.color === cartItem.color
         );
     });
     // If the item doesn't exist, add it to the cart
