@@ -157,6 +157,7 @@ function addToShopCart() {
         size: selectedSize,
         quantity: quantity
     };
+    
 
     // Retrieve existing cart items from local storage or create an empty array
     var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
