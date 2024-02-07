@@ -68,6 +68,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+function redeemProduct(productId, pointsRequired) {
+  // Retrieve earned points from local storage
+  var earnedPoints = parseInt(localStorage.getItem('earnedPoints')) || 0;
+
+  // Check if the user has enough earned points to redeem
+  if (pointsRequired <= earnedPoints) {
+      // Deduct redeemed points from earned points
+      earnedPoints -= pointsRequired;
+
+      // Implement your specific redemption logic here, e.g., update UI or trigger backend process
+
+      // Update the earned points display
+      updatePointsDisplay(earnedPoints);
+
+      // Save the updated earned points to local storage
+      localStorage.setItem('earnedPoints', earnedPoints);
+
+      alert('Redemption successful!');
+  } else {
+      alert('You do not have enough earned points to redeem this product.');
+  }
+  console.log('Redemption Attempt - Earned Points:', earnedPoints);
+  console.log('Redemption Attempt - Points Required:', pointsRequired);
+}
 
 
 // Function to add an item to the cart
