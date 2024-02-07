@@ -1,0 +1,77 @@
+#user-profile{
+    width: 80%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 2px solid darkblue; /* Border around the container */
+    padding: 20px; /* Padding around the container */
+    position: relative; /* Make the container position relative */
+    height: 650px;
+}
+
+
+
+
+.profile-container{
+    width:35%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    border: 3px solid darkblue; /* Border around the container */
+    padding: 20px; /* Padding around the container */
+    height:1000px;
+}
+.profile-image {
+    color:white;
+    width: 200px;
+    height: 200px;
+    background-color: darkblue; /* Default background color for the circle */
+    border-radius: 50%; /* Makes the div appear as a circle */
+    margin: 0 auto 20px; /* Centers the circle horizontally and adds some space below */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+
+
+#saveButton {
+    
+    position: absolute; /* Make the button position absolute */
+    background-color: darkblue; /* Set your desired background color */
+    border-color: darkblue;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px; /* Add border radius to curve the edges */
+    cursor: pointer;
+    margin-top: 20px; /* Adjust margin to align the button */
+    bottom: -80px; /* Adjust the position relative to the bottom */
+    right: 50px; /* Adjust the position relative to the right */
+    transform: translateX(-50%); /* Center the button horizontally */
+}
+
+#saveButton:hover {
+    color:darkblue;
+    background-color: white ; /* Change color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    #user-profile {
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    #saveButton {
+        position: static; /* Remove absolute positioning on smaller screens */
+        margin-top: 20px; /* Adjust margin to space out the button */
+        bottom: auto; /* Remove bottom positioning */
+        right: auto; /* Remove right positioning */
+        transform: none; /* Reset transform */
+        width: 100%; /* Make button full width */
+    }
+}

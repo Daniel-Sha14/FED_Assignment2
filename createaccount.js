@@ -243,23 +243,43 @@ $(document).ready(function () {
               "x-apikey": APIKEY,
               "content-type": "application/json"
           },
-          data: JSON.stringify(userData),
+          // data: JSON.stringify(userData),
+          // success: function (response) {
+          //     // Check if the response contains any user data
+          //     if (response.length > 0) {
+          //         // User login successful
+          //         // alert("Login successful!");
+          //         // Redirect to dashboard or another page
+          //         window.location.href = "index.html";
+          //     } else {
+          //         // No user found or invalid credentials
+          //         alert("Invalid username or password. Please try again.");
+          //     }
+          // },
+          // error: function (xhr, status, error) {
+          //     console.error(xhr.responseText);
+          //     alert("An error occurred. Please try again later.");
+          // }
           success: function (response) {
-              // Check if the response contains any user data
-              if (response.length > 0) {
-                  // User login successful
-                  // alert("Login successful!");
-                  // Redirect to dashboard or another page
-                  window.location.href = "index.html";
-              } else {
-                  // No user found or invalid credentials
-                  alert("Invalid username or password. Please try again.");
-              }
-          },
-          error: function (xhr, status, error) {
-              console.error(xhr.responseText);
-              alert("An error occurred. Please try again later.");
-          }
+            // Check if the response contains any user data
+            if (response.length > 0) {
+                // Iterate through the response array to find the matching user
+                for (let i = 0; i < response.length; i++) {
+                    if (response[i].password === userData.password && response[i].username === userData.username) {
+                        // User login successful
+                        localStorage.setItem('loggedInUser', JSON.stringify(response[i]));
+                        // Redirect to dashboard or another page
+                        window.location.href = "index.html";
+                        return; // Exit the function after successful login
+                    }
+                }
+                // If no matching user is found
+                alert("Invalid username or password. Please try again.");
+            } else {
+                // No user found or response is empty
+                alert("Invalid username or password. Please try again.");
+            }
+        }
       });
   });
 });

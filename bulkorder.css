@@ -1,0 +1,27 @@
+.button {    
+    background-color: darkblue; /* Set your desired background color */
+    border-color: darkblue;
+    color: white;
+    padding: 5px 40px;    
+    font-size: 16px;
+    border-radius: 10px; /* Add border radius to curve the edges */
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    color:darkblue;
+    background-color: white ; /* Change color on hover */
+}
+form{
+    padding-left:50px;
+    
+}
+footer{
+    padding:50px;
+    padding-left: 50px;
+}
+.form-group{
+    padding:20px;
+}
+

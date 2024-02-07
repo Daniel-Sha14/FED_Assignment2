@@ -58,3 +58,21 @@
 .productDesc h5{
     font-size:18px;
 }
+
+@media screen and (max-width: 768px) {
+  .container3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+  }
+
+  .product {
+      width: 80%; /* Adjust width for smaller screens */
+      margin: 0 auto; /* Center the product item horizontally */
+  }
+
+  .product img {
+      width: 100%; /* Make images full width on smaller screens */
+      border-radius: 20px; /* Adjust border radius for smaller screens */
+  }
+}
