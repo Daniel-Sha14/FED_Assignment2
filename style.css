@@ -491,6 +491,51 @@ div[class^='col']{border: 1px solid darkblue;}
 
 /*for mobile versions*/
 @media screen and (max-width: 600px) {
+
+/* Move the background images to take the full width */
+#bgleft {
+  position: static;
+  width: 100%;
+  height: auto;
+}
+#bg-right{
+  position: static;
+  width: 100%;
+  height: 350px;
+}
+
+/* Center the login page picture */
+.loginpagepic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjust font sizes for better readability */
+.font3 {
+  font-size: 30px;
+}
+
+.font4 {
+  font-size: 20px;
+}
+
+/* Adjust spacing */
+.spacing, .spacing2 {
+  margin: 20px;
+}
+
+/* Make images responsive */
+.leftimg, .homeimg {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjust the flex layout for smaller screens */
+.imageside {
+  width: 100%;
+  margin: 0;
+}
+
 .footer-split p{
   font-size:10px;
 }
