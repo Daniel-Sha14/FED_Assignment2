@@ -72,9 +72,11 @@ function searchItems() {
     window.location.href = 'mtops.html';
   } else if (searchTerm.includes('men') && searchTerm.includes('underwear')) {
     window.location.href = 'munderwear.html';
+  } else if (searchTerm.includes('kids') && searchTerm.includes('bottoms')) {
+    window.location.href = 'kbottoms.html';
   } else if (searchTerm.includes('kids') && searchTerm.includes('homewear')) {
     window.location.href = 'khomewear.html';
-  } else if (searchTerm.includes('kids') && searchTerm.includes('innerwear')) {
+  }else if (searchTerm.includes('kids') && searchTerm.includes('innerwear')) {
     window.location.href = 'kinnerwear.html';
   } else if (searchTerm.includes('kids') && searchTerm.includes('outerwear')) {
     window.location.href = 'kouterwear.html';
