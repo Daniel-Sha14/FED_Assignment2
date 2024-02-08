@@ -1,22 +1,25 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var submitButton = document.querySelector('.btn.btn-primary');
 
-    submitButton.addEventListener('click', function(event) {
-      // Prevent the default form submission behavior
-      event.preventDefault();
-      
-      // Get the input element by its type
-      var inputField = document.querySelector('input[type="text"]');
-      
-      // Check if the input field is empty
-      if (inputField.value.trim() === '') {
-        alert('Please fill out the input field before submitting.');
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('checkout-form');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission behavior
+
+      // Check if all input fields are filled
+      var inputs = form.querySelectorAll('input[required]');
+      var allFilled = true;
+      inputs.forEach(function (input) {
+          if (input.value.trim() === '') {
+              allFilled = false;
+          }
+      });
+
+      // Redirect if all fields are filled
+      if (allFilled) {
+          var destinationURL = 'checkout2.html';
+          window.location.href = destinationURL;
       } else {
-        // Specify the URL of the page you want to redirect to
-        var destinationURL = 'checkout2.html';
-
-        // Redirect to the specified page
-        window.location.href = destinationURL;
+          alert('Please fill out all the required fields.');
       }
-    });
   });
+});
