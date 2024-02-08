@@ -15,10 +15,14 @@
 * Shopping Cart - Customers could add their items to their shopping cart which they can proceed to checkout
 * Membership - Customers may apply for a membership for x amount of dollars which they can enjoy some benefits such as discounts and vouchers
 * Bulk Order - Customers could submit a request for a bulk order
-
-#### Features Left to Implement
 * Rewards - Customers would be awarded x points for spending x amount of dollars. After accumulating their points, customers can claim a FREE item from the Rewards Table with their points!
 
+### Testing
+1. Create Account/Login
+    * 
+2. Bulk Order
+3. Membership
+4. Check Out
 
 ### Technologies Used
 * HTML
