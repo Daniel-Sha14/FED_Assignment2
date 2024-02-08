@@ -6,6 +6,16 @@
 ### More about DANZE
 ###### DANZE is an online clothing eCommerce website where customers could shop for their favourite clothes. DANZE caters to a variety of customers from kids to adults! 
 
+### Contribution
+#### Daniel and Yun Ze Assignment 2 FED
+##### Website Name: DANZE
+##### Features we each implemented:
+* Daniel: Implemented home, women, men, kids, rewards, membership, login, checkout, about us pages, calculating total
+  function, calculating points function redeem points function, search bars
+
+* Yun Ze: Implemented the APIs needed for the website, wishlist function, cart function, format for pages,
+  coming soon, bulk order, profile, return policy pages, validation for inputs
+
 ### Features
 
 #### Existing Features
@@ -19,10 +29,17 @@
 
 ### Testing
 1. Create Account/Login
-    * 
+   * Go to the create account section and create an account.
+   * After account has been created, log in to the website using new account
 2. Bulk Order
+   * Enter the name of the product you want to bulk order for
+   * Enter the quantity
+   * Enter relevent contact details and submit
 3. Membership
+   * Enter the relevent contact information and questions to apply for a membership
+   * Press submit
 4. Check Out
+   * Fill out the necessary information and check out
 
 ### Technologies Used
 * HTML
@@ -254,7 +271,7 @@
 
 
 ### Codes
-* Some codes were taken from Bootstrap, W3school
+* Some codes were taken from Bootstrap (www.getbootstrap.com), W3school (www.w3schools.com)
 
 #### Acknowledgements
 * Some parts of this website is inspired by Uniqlo and a few other online retail shops 

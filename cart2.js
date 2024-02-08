@@ -2,84 +2,6 @@ function selectColor(color) {
     document.getElementById('selected-color').innerText = color;
 }
 
-
-
-
-
-
-
-
-
-// // Retrieve cart items from local storage
-// /*var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
-// // Display cart items
-// var cartList = document.getElementById('cart-items');
-// cartItems.forEach(function(item) {
-//     var listItem = document.createElement('div');
-//     listItem.textContent = item.name + ' - ' + item.color + ', ' + item.size + ' - ' + item.price + ' - Quantity: ' + item.quantity;
-//     cartList.appendChild(listItem);
-// });*/
-
-
-// // Retrieve cart items from local storage
-// var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
-// // Display cart items
-// var cartList = document.getElementById('cart-items');
-
-// cartItems.forEach(function(item) {
-//     // Create a container for each cart item
-//     var cartItemContainer = document.createElement('div');
-//     cartItemContainer.classList.add('cart-item');
-
-//     // Create an image element for the product image
-//     var imageElement = document.createElement('img');
-//     imageElement.src = item.image;
-//     imageElement.alt = item.name;
-//     imageElement.classList.add('item-image');
-//     cartItemContainer.appendChild(imageElement);
-
-//     // Create a div to hold the details of the item
-//     var detailsDiv = document.createElement('div');
-//     detailsDiv.classList.add('item-details');
-
-//     // Create elements to display the item details
-//     var itemName = document.createElement('h3');
-//     itemName.textContent = item.name;
-
-//     var itemColor = document.createElement('p');
-//     itemColor.textContent = 'Color: ' + item.color 
-    
-//     var itemSize = document.createElement('p');
-//     itemSize.textContent = 'Size: ' + item.size;
-
-//     var itemPrice = document.createElement('p');
-//     itemPrice.textContent = 'Price: ' + item.price;
-
-//     var itemQuantity = document.createElement('p');
-//     itemQuantity.textContent = 'Quantity: ' + item.quantity;
-
-//     // Append the details elements to the details div
-//     detailsDiv.appendChild(itemName);
-//     detailsDiv.appendChild(itemColor);
-//     detailsDiv.appendChild(itemSize);
-//     detailsDiv.appendChild(itemPrice);
-//     detailsDiv.appendChild(itemQuantity);
-
-//     // Append the details div to the cart item container
-//     cartItemContainer.appendChild(detailsDiv);
-
-//     // Append the cart item container to the cart list
-//     cartList.appendChild(cartItemContainer);
-// });
-
-
-
-
-
-// ****** Image unable to be displayed *****
-
 function updateCartDisplay(cartItems) {
     var cartContainer = document.getElementById('cart-items');
     cartContainer.innerHTML = ''; // Clear the existing content
@@ -187,16 +109,6 @@ function addToShopCart() {
 
     
     
-
-
-    // Add the new cart item
-    //cartItems.push(cartItem);
-
-    // Save the updated cart items back to local storage
-    //localStorage.setItem('cartItems', JSON.stringify(cartItems));
-
-    // Redirect to the cart page
-    //window.location.href = 'cart.html';
 }
 
 
@@ -272,17 +184,6 @@ function updateQuantity(quantity, itemName) {
     updateCartDisplay(updatedCartItems);
 }
 
-
-
-
-
-// // // Add event listener to the remove button
-// var removeButton = itemElement.querySelector('.removeBtn');
-// removeButton.addEventListener('click', function() {
-//     removeItemFromCart(item.name);
-//     itemElement.remove(); // Remove HTML element from the cart display
-//     updateTotalPrice(cartItems);
-// });
 
 
 // Function to remove item from cart

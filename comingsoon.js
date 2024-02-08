@@ -29,9 +29,7 @@ var x = setInterval(function() {
   minutes = prependZero(minutes);
   seconds = prependZero(seconds);
     
-  // Output the result in an element with id="demo"
-  /*document.getElementById("demo").innerHTML = days + " : " + hours + " : "
-  + minutes + " : " + seconds ;*/
+  
 
   var demoElements = document.getElementsByClassName("demo");
   for (var i=0; i<demoElements.length; i++){
@@ -45,6 +43,6 @@ var x = setInterval(function() {
     for (var i = 0; i < demoElements.length; i++) {
         demoElements[i].innerHTML = "EXPIRED";
     }
-    /*document.getElementById("demo").innerHTML = "EXPIRED";*/
+    
   }
 }, 1000);
