@@ -4,20 +4,21 @@
   
 }
 
-
+/*for header image at nav bar*/
 .headerimg2{
   width:auto;
   height:25px;
   
 }
 
+/*for images used at home page*/
 .homeimg{
   width:auto;
   height:200px;
   object-fit: contain;
 }
 
-
+/*spacing*/
 .spacing{
   margin:50px;
 }
@@ -28,7 +29,7 @@
   
   
 }
-
+/*to format the page properly*/
 .imageside {
   box-sizing: border-box;
   padding: 2%;
@@ -43,7 +44,7 @@
 }
 
 
-
+/*fonts sizes*/
 .font {
   font-family: 'Montserrat', sans-serif;
   color: darkblue;
@@ -64,13 +65,13 @@
   height:400px;
   
 }
-
+/*to display points properly*/
 .points-display {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-
+/*used for footer of page*/
 .footer {
   border:10px;
   background:darkblue;
@@ -83,7 +84,7 @@
   margin:100px;
   
 }*/
-
+/*to format the page properly*/
 .split2 {
   display: flex;
   flex-direction: column;
@@ -92,7 +93,7 @@
   
 }
 
-
+/*to have spaces between images/text and to format it properly*/
 .imagespace {
   width: 500px;
   height: 350px;
@@ -116,6 +117,7 @@
   text-align: center; /* Center-align footer content */
 }
 
+/*formatting whatever is in the footer itself*/
 .footer-split {
   display: flex;
   flex-direction: column;
@@ -134,20 +136,20 @@
   display: flex;
   justify-content: space-between;
 }
-
+/*displays text to the left*/
 .totheleft {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
 }
-
+/*displays text to the right*/
 .totheright {
   display: flex;
   justify-content: flex-start;
   margin: 20px;
 }
 
-
+/*used to format and make the carousel in home page work*/
 .carousel-wrapper {
   height: 400px;
   position: relative;
@@ -187,7 +189,7 @@
   
   text-align:center
 }
-
+/*to format the things properly*/
 .imageside2 {
   box-sizing: border-box;
   padding: 2%;
@@ -217,16 +219,16 @@ flex-direction: column;
   
   
 }
-
+/*for search function*/
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-repeat: no-repeat; /* To not repeat the icon image */
   width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
+  font-size: 16px; /* Increasing font-size */
   padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
+  border: 1px solid #ddd; /* Adding a grey border */
+  margin-bottom: 12px; /* Adding some space below the input */
   margin:10px;
 }
 
@@ -252,6 +254,7 @@ flex-direction: column;
   background-color: navy; /* Add a hover effect to all links, except for headers */
 }
 
+/*to create a split screen*/
 #bgleft {
   position: fixed;
   top: 0;
@@ -277,7 +280,7 @@ flex-direction: column;
   right: 0;
   z-index: -1;
 }
-
+/*for fonts*/
 .font3 {
   font-family:'Montserrat', sans-serif;
   font-size: 50px;
@@ -295,11 +298,11 @@ flex-direction: column;
   justify-content: flex-start;
   margin:20px;
 }
-
+/*spacing*/
 .spacing2 {
   margin:200px;
 }
-
+/*formats the login page pic*/
 .loginpagepic{
   display: block;
     margin-left: auto;
@@ -316,7 +319,7 @@ flex-direction: column;
   border:20px;
   border-color:darkblue;
 }
-
+/*makes the text centralised*/
 .centertext {
   display: block;
   text-align: center;
@@ -329,6 +332,7 @@ flex-direction: column;
   
 }
 
+/*for the nav bar - used bootstrap*/
 .topnav {
   overflow: hidden;
   
@@ -362,7 +366,7 @@ flex-direction: column;
   border: none;
   font-size: 17px;
 }
-
+/*for mobile versions for nav bar*/
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
@@ -398,6 +402,7 @@ flex-direction: column;
   object-fit: cover; /* Ensure the image covers the entire space */
 }
 
+/*description of items format*/
 .description {
   flex: 1;
   padding: 20px;
@@ -417,7 +422,7 @@ flex-direction: column;
 .description p {
   margin-top: 10px; /* Add margin to create space between product name and description */
 }
-
+/*for selecting the colour boxes*/
 #color-boxes {
   display: flex;
   margin-top: 10px;
@@ -431,7 +436,7 @@ flex-direction: column;
   border: 1px solid #000;
 }
 
-/* Additional styles for selected color display */
+
 #selected-size,
 #selected-color {
   margin-top: 10px;
@@ -466,7 +471,7 @@ flex-direction: column;
 .wishlist-button,
 .cart-button {
   width: 100%;
-  max-width: 555px; /* Set a maximum width for the buttons */
+  max-width: 555px; 
   margin-bottom: 10px;
   
 }
@@ -482,24 +487,9 @@ flex-direction: column;
 }
 
 
-
-/*#carouselExampleFade2 .carousel-control-prev-icon,
-#carouselExampleFade2 .carousel-control-next-icon {
-  background-color: black; 
-}
-
-#carouselExampleFade2 .carousel-control-prev,
-#carouselExampleFade2 .carousel-control-next {
-  color: black; 
-}
-
-#carouselExampleFade2 .carousel-control-prev:hover,
-#carouselExampleFade2 .carousel-control-next:hover {
-  color: white; 
-}*/
-
 div[class^='col']{border: 1px solid darkblue;}
 
+/*for mobile versions*/
 @media screen and (max-width: 600px) {
 .footer-split p{
   font-size:10px;
